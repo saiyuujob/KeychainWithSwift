@@ -10,6 +10,7 @@
 		6AEEA0D31F1DCE46004916B9 /* KeychainWithSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AEEA0C91F1DCE46004916B9 /* KeychainWithSwift.framework */; };
 		6AEEA0D81F1DCE46004916B9 /* KeychainWithSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEEA0D71F1DCE46004916B9 /* KeychainWithSwiftTests.swift */; };
 		6AEEA0DA1F1DCE46004916B9 /* KeychainWithSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AEEA0CC1F1DCE46004916B9 /* KeychainWithSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AEEA1081F1DCF31004916B9 /* KeychainWithSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEEA1071F1DCF31004916B9 /* KeychainWithSwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,6 +21,27 @@
 			remoteGlobalIDString = 6AEEA0C81F1DCE46004916B9;
 			remoteInfo = KeychainWithSwift;
 		};
+		6AEEA1491F1DD257004916B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6AEEA1431F1DD257004916B9 /* Demo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6AEEA1121F1DD011004916B9;
+			remoteInfo = Demo;
+		};
+		6AEEA14B1F1DD257004916B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6AEEA1431F1DD257004916B9 /* Demo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6AEEA1261F1DD011004916B9;
+			remoteInfo = DemoTests;
+		};
+		6AEEA14D1F1DD257004916B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6AEEA1431F1DD257004916B9 /* Demo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6AEEA1311F1DD011004916B9;
+			remoteInfo = DemoUITests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +51,8 @@
 		6AEEA0D21F1DCE46004916B9 /* KeychainWithSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeychainWithSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AEEA0D71F1DCE46004916B9 /* KeychainWithSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainWithSwiftTests.swift; sourceTree = "<group>"; };
 		6AEEA0D91F1DCE46004916B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AEEA1071F1DCF31004916B9 /* KeychainWithSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWithSwift.swift; sourceTree = "<group>"; };
+		6AEEA1431F1DD257004916B9 /* Demo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Demo.xcodeproj; path = Demo/Demo.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +77,7 @@
 		6AEEA0BF1F1DCE46004916B9 = {
 			isa = PBXGroup;
 			children = (
+				6AEEA1431F1DD257004916B9 /* Demo.xcodeproj */,
 				6AEEA0CB1F1DCE46004916B9 /* KeychainWithSwift */,
 				6AEEA0D61F1DCE46004916B9 /* KeychainWithSwiftTests */,
 				6AEEA0CA1F1DCE46004916B9 /* Products */,
@@ -73,6 +98,7 @@
 			children = (
 				6AEEA0CC1F1DCE46004916B9 /* KeychainWithSwift.h */,
 				6AEEA0CD1F1DCE46004916B9 /* Info.plist */,
+				6AEEA1071F1DCF31004916B9 /* KeychainWithSwift.swift */,
 			);
 			path = KeychainWithSwift;
 			sourceTree = "<group>";
@@ -84,6 +110,16 @@
 				6AEEA0D91F1DCE46004916B9 /* Info.plist */,
 			);
 			path = KeychainWithSwiftTests;
+			sourceTree = "<group>";
+		};
+		6AEEA1441F1DD257004916B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6AEEA14A1F1DD257004916B9 /* Demo.app */,
+				6AEEA14C1F1DD257004916B9 /* DemoTests.xctest */,
+				6AEEA14E1F1DD257004916B9 /* DemoUITests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +184,7 @@
 				TargetAttributes = {
 					6AEEA0C81F1DCE46004916B9 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					6AEEA0D11F1DCE46004916B9 = {
@@ -166,6 +203,12 @@
 			mainGroup = 6AEEA0BF1F1DCE46004916B9;
 			productRefGroup = 6AEEA0CA1F1DCE46004916B9 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6AEEA1441F1DD257004916B9 /* Products */;
+					ProjectRef = 6AEEA1431F1DD257004916B9 /* Demo.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6AEEA0C81F1DCE46004916B9 /* KeychainWithSwift */,
@@ -173,6 +216,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6AEEA14A1F1DD257004916B9 /* Demo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Demo.app;
+			remoteRef = 6AEEA1491F1DD257004916B9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6AEEA14C1F1DD257004916B9 /* DemoTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DemoTests.xctest;
+			remoteRef = 6AEEA14B1F1DD257004916B9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6AEEA14E1F1DD257004916B9 /* DemoUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DemoUITests.xctest;
+			remoteRef = 6AEEA14D1F1DD257004916B9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6AEEA0C71F1DCE46004916B9 /* Resources */ = {
@@ -196,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AEEA1081F1DCF31004916B9 /* KeychainWithSwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +388,7 @@
 		6AEEA0DE1F1DCE46004916B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -331,6 +400,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.KeychainWithSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -338,6 +408,7 @@
 		6AEEA0DF1F1DCE46004916B9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +427,7 @@
 		6AEEA0E11F1DCE46004916B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = KeychainWithSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.KeychainWithSwiftTests;
@@ -367,6 +439,7 @@
 		6AEEA0E21F1DCE46004916B9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = KeychainWithSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.KeychainWithSwiftTests;
@@ -394,6 +467,7 @@
 				6AEEA0DF1F1DCE46004916B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6AEEA0E01F1DCE46004916B9 /* Build configuration list for PBXNativeTarget "KeychainWithSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +476,7 @@
 				6AEEA0E21F1DCE46004916B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
